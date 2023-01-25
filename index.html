@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saylani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="row topcolorset d-flex flex-row align-items-center no-margin justify-content-center">
+
+        <div class="col-lg-8 ">
+
+                <div class="row for-nav-font-size">
+
+                            <div class="col-sm-5 col-md-5 col-lg-5 col-xxl-3 me-sm-auto p-top-5">
+                                <a href="mailto:info@saylaniwelfare.com" style="text-decoration: none;">
+                                <span class="custom-font-grey-color "> 
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                    </svg> 
+                                    &nbsp; info@saylaniwelfare.com </span>
+                                </a>
+
+                            </div>
+                            <div class="col-sm-10 col-md-5 col-lg-5 col-xxl-7 ms-sm-auto col-10  p-top-5">
+
+                                <a href="tel:021-111-729-526" style="text-decoration: none;">
+                                <span class="me-auto custom-font-grey-color  ">
+                                    &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                      </svg>
+                                   &nbsp; 021-111-729-526
+                                </span>
+                                </a>
+                               
+                            </div>
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <nav class="d-flex align-items-center justify-content-evenly top_nav">
+                <div class="col-md-4 ">
+                    <p style="display: inline-block;">info@SaylaniWelfareUSA.com</p>
+                </div>
+                <div class="col-md-4 ">
+                    <p style="display: inline-block;">833-786-0999</p>
+                </div>
+                <div class="col-md-4 ">
+                    <select name="" id="">
+                        <option value="">English</option>
+                        <option value="">Urdu</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img width="180px"
+                    src="https://saylaniwelfareusa.com/static/media/logo_saylaniwelfareusa.22bf709605809177256c.png"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Bank Details
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <div>
+                    <h1>Donate us to support
+                        <h1 style="color: lightgreen;">flood-affected</h1>
+                        <h1>families in Pakistan</h1>
+                    </h1>
+                    <h4>We are distributing Shelter Kit|</h4>
+                    <p class="fs-5">Saylani Welfare is on the ground and already working with local communities to
+                        assess how best to
+                        support
+                        affected families, who urgently need food, Ration, shelter, bedding, Medical Facility and
+                        hygiene
+                        items.
+                    </p>
+                    <button class="btn btn-transparent border px-5">Read More -></button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img" width="100%"
+                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646926708/website-images/static/99.png"
+                    alt="">
+            </div>
+        </div>
+        <div class="row bg rounded shadow p-3">
+            <div class="col-md-12">
+                <div>
+                    <h2 class="d-inline-block">Help Us to make lives better</h2><br>
+                    <p class="d-inline-block text-primary fs-5">Quick Donation</p>
+                    <button class="btn btn-secondary">Electricity Bill Support</button> <button
+                    class="btn btn-outline-secondary">Food Relief
+                </button> <button class="btn btn-outline-secondary">Help the needy in winters</button><button
+                    class="btn btn-outline-secondary">Food</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <img width="100%"
+                    src="https://res.cloudinary.com/saylani-welfare/image/upload/v1672662640/website-images/dynamic/f0eb94d3-2d65-44ca-8b6c-8d26fe32181a.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center ress">
+            <div
+                class="forHover ms-2 py-4 forbg col-md-2 rounded shadow mt-5 d-flex justify-content-center align-items-center">
+                <img  src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927889/website-images/static/44.png"
+                    alt="">
+            </div>
+            <div
+                class="forHover ms-2  py-4 forbg col-md-2 rounded shadow mt-5 d-flex justify-content-center align-items-center ">
+                <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927857/website-images/static/41.png"
+                    alt="">
+            </div>
+            <div
+                class="forHover ms-2  py-4 forbg col-md-2 rounded shadow mt-5 d-flex justify-content-center align-items-center ">
+                <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927849/website-images/static/39.png"
+                    alt="">
+            </div>
+            <div
+                class="forHover ms-2  py-4 forbg col-md-2 rounded shadow mt-5 d-flex justify-content-center align-items-center ">
+                <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927853/website-images/static/40.png"
+                    alt="">
+            </div>
+            <div
+                class="forHover ms-2  py-4 forbg col-md-2 rounded shadow mt-5 d-flex justify-content-center align-items-center ">
+                <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927876/website-images/static/43.png"
+                    alt="">
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1664192631/website-images/dynamic/46ccd3e9-3acf-4139-bd8b-8f93c9fa57ae.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h5 class="ant-typography heading_english undefined">Food Distribution for flood affectees
+                                in Interior Sindh &amp; Baluchistan</h5>
+                        </h5>
+                        <button type="button" class="btn btn-primary">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1664192631/website-images/dynamic/46ccd3e9-3acf-4139-bd8b-8f93c9fa57ae.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h5 class="ant-typography heading_english undefined">Food Distribution for flood affectees
+                                in Interior Sindh &amp; Baluchistan</h5>
+                        </h5>
+                        <button type="button" class="btn btn-primary">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1664192631/website-images/dynamic/46ccd3e9-3acf-4139-bd8b-8f93c9fa57ae.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h5 class="ant-typography heading_english undefined">Food Distribution for flood affectees
+                                in Interior Sindh &amp; Baluchistan</h5>
+                        </h5>
+                        <button type="button" class="btn btn-primary">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img class="img2" width="100%" height="500vh"
+                    src="https://i.tribune.com.pk/media/images/2178912-image-1584559620/2178912-image-1584559620.jpg"
+                    alt="">
+            </div>
+            <div class="col-md-6">
+                <h1>Other Projects</h1>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927917/website-images/static/47.png"
+                            alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Hepatitis</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis veritatis tenetur quasi
+                            quod, exercitationem at explicabo! Atque, libero enim dignissimos aliquam nisi eaque ipsam
+                            nihil voluptatem temporibus, ratione dolores dicta?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927917/website-images/static/47.png"
+                            alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Hepatitis</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis veritatis tenetur quasi
+                            quod, exercitationem at explicabo! Atque, libero enim dignissimos aliquam nisi eaque ipsam
+                            nihil voluptatem temporibus, ratione dolores dicta?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1646927917/website-images/static/47.png"
+                            alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Hepatitis</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis veritatis tenetur quasi
+                            quod, exercitationem at explicabo! Atque, libero enim dignissimos aliquam nisi eaque ipsam
+                            nihil voluptatem temporibus, ratione dolores dicta?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <img width="100%" src="./images/pic.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class=" text-center" style="color: lightgreen;">Our Testimonials</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center fw-bold display-5" style="color: black;">What They Say?</h1>
+            </div>
+        </div>
+        <div class="rounded shadow bggg">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center rounded-pill">
+                    <img width="10%" class="rounded-pill profilePic"
+                        src="https://res.cloudinary.com/saylani-welfare/image/upload/v1648318863/website-images/static/95.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h3 class="text-center text-primary">Arshad Wali Muhammad</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center fs-5 ">Saylani Welfare Trust is a name that needs no
+                        introduction today. The journey this team embarked
+                        upon was made possible owing to their zeal, enthusiasm & commitment to the society and by the
+                        grace of Allah (SWT), it has become a name that we need and not just the one we want. I wish
+                        Saylani’s team all the success and blessing that they deserve for future, May God bless Saylani
+                        and ensure prosperity and happiness for our people, Ameen!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-success">></button><button class="btn btn-success ms-3">></button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1 class="text-center">Media Updates</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/ZDCr0YgNuFw" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1 class="text-center">News</h1>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+            <div class="col">
+                <div class="card h-100 shadow ">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1673677765/website-images/dynamic/a8679ed7-2afc-4bc9-bb1a-710e61dc6852.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bgggg">
+                        <h5 class="card-title">
+                            <span class="badge forbg">Fri Jan 13 2023</span>
+                            <h5 class="ant-typography heading_english undefined">A Delegation from Classera</h5>
+                        </h5>
+                        <button type="button" class="btn btn-primary">-></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1673677765/website-images/dynamic/a8679ed7-2afc-4bc9-bb1a-710e61dc6852.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bgggg">
+                        <h5 class="card-title">
+                            <span class="badge forbg">Fri Jan 13 2023</span>
+                            <h5 class="ant-typography heading_english undefined">A Delegation from Classera</h5>
+                        </h5>
+                        <button type="button" class="btn btn-primary">-></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1673677765/website-images/dynamic/a8679ed7-2afc-4bc9-bb1a-710e61dc6852.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body bgggg">
+                        <h5 class="card-title">
+                            <span class="badge forbg">Fri Jan 13 2023</span>
+                            <h5 class="ant-typography heading_english undefined">A Delegation from Classera</h5>
+                        </h5>
+                        <button type="button" class="btn btn-primary">-></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bgimg p-5 mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Saylani Guide</h1>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <input placeholder="Enter e-mali address" class="p-2 bg-transparent me-3 border" type="email"
+                        name="" id=""><button class="btn btn-light p-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-5">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

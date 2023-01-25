@@ -1,0 +1,59 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .img{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .img2{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .profilePic{
+        width: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .ress{
+        width: 100%;
+    }
+  }
+.forHover:hover{
+    padding: 50px;
+    transition: 0.1s;
+    transform: scale(1.2);
+}
+.top_nav{
+    background-color: lightgray;
+}
+.forbg{
+    background-color: lightgreen;
+}
+.bg{
+    background-color: lightgreen;
+
+}
+.imgg:hover{
+    background-color: black;
+}
+.bggg{
+    background-color: lightgray;
+    padding: 50px;
+}
+.bgggg{
+    background-color: #e9ecef;
+
+}
+
+.bgimg{
+    background-color: rgb(0,0,255,0.7);
+    background-image: url('https://www.saylaniwelfare.com/static/media/guide_back.3a5127e910c15a49f875.png');
+}
+::placeholder{
+    color: white;
+}
